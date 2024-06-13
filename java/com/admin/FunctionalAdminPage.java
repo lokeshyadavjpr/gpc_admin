@@ -490,7 +490,7 @@ public class FunctionalAdminPage extends SeleniumTest{
 		System.out.println(elapsedTime);
 	}
 	
-	@Test(priority = 24, dataProvider = "validate_admin_page_leaver_last_day_of_work_more_than_90_days" ,dataProviderClass = AdminPageDataProvider.class, groups={"preProdSanity","prodSanity","regression2"}, description = "Validate ( Leaver ) Last day of work is more than 90 Days ( = Yesterday)")
+	@Test(priority = 24, dataProvider = "validate_admin_page_leaver_last_day_of_work_more_than_90_days" ,dataProviderClass = AdminPageDataProvider.class, groups={"preProdSanity","prodSanity","regression2"}, description = "Validate ( Leaver ) Last day of work is more than 90 Days")
 	public void validate_admin_page_leaver_last_day_of_work_more_than_90_days(int user_id){
 		System.out.println("Inside_validate_admin_page_leaver_last_day_of_work_more_than_90_days");
 		startTime = System.currentTimeMillis();
