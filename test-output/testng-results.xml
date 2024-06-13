@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="29" total="30" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[LoginPage -> enter_username, userName: 'Automation_User']]>
+    </line>
+    <line>
+      <![CDATA[LoginPage -> enter_password, password: 'Automation@123']]>
+    </line>
+    <line>
+      <![CDATA[LoginPage -> press_login_button]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-06-05T22:10:00 IST" name="Default suite" finished-at="2024-06-05T22:11:35 IST" duration-ms="95242">
+    <groups>
+      <group name="regression3">
+        <method signature="FunctionalAdminPage.validate_admin_page_workday_writeback_for_motion_user(int)[pri:37, instance:com.admin.FunctionalAdminPage@821330f]" name="validate_admin_page_workday_writeback_for_motion_user" class="com.admin.FunctionalAdminPage"/>
+      </group> <!-- regression3 -->
+      <group name="failed">
+        <method signature="FunctionalAdminPage.validate_admin_page_workday_writeback_for_motion_user(int)[pri:37, instance:com.admin.FunctionalAdminPage@821330f]" name="validate_admin_page_workday_writeback_for_motion_user" class="com.admin.FunctionalAdminPage"/>
+      </group> <!-- failed -->
+      <group name="prodSanity">
+        <method signature="FunctionalAdminPage.validate_admin_page_workday_writeback_for_motion_user(int)[pri:37, instance:com.admin.FunctionalAdminPage@821330f]" name="validate_admin_page_workday_writeback_for_motion_user" class="com.admin.FunctionalAdminPage"/>
+      </group> <!-- prodSanity -->
+      <group name="preProdSanity">
+        <method signature="FunctionalAdminPage.validate_admin_page_workday_writeback_for_motion_user(int)[pri:37, instance:com.admin.FunctionalAdminPage@821330f]" name="validate_admin_page_workday_writeback_for_motion_user" class="com.admin.FunctionalAdminPage"/>
+      </group> <!-- preProdSanity -->
+    </groups>
+    <test started-at="2024-06-05T22:10:00 IST" name="Default test" finished-at="2024-06-05T22:11:35 IST" duration-ms="95242">
+      <class name="com.admin.FunctionalAdminPage">
+        <test-method is-config="true" signature="load_config_properties()[pri:0, instance:com.admin.FunctionalAdminPage@821330f]" started-at="2024-06-05T22:09:29 IST" name="load_config_properties" finished-at="2024-06-05T22:09:29 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- load_config_properties -->
+        <test-method is-config="true" signature="load_parameters()[pri:0, instance:com.admin.FunctionalAdminPage@821330f]" started-at="2024-06-05T22:09:29 IST" name="load_parameters" finished-at="2024-06-05T22:09:29 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- load_parameters -->
+        <test-method is-config="true" signature="open_web_driver()[pri:0, instance:com.admin.FunctionalAdminPage@821330f]" started-at="2024-06-05T22:09:29 IST" name="open_web_driver" finished-at="2024-06-05T22:10:00 IST" depends-on-methods="com.config.SeleniumTest.load_parameters, com.config.SeleniumTest.load_config_properties" duration-ms="30598" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[LoginPage -> enter_username, userName: 'Automation_User']]>
+            </line>
+            <line>
+              <![CDATA[LoginPage -> enter_password, password: 'Automation@123']]>
+            </line>
+            <line>
+              <![CDATA[LoginPage -> press_login_button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- open_web_driver -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.admin.FunctionalAdminPage@821330f]" started-at="2024-06-05T22:10:00 IST" name="beforeClass" finished-at="2024-06-05T22:10:44 IST" duration-ms="43806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="validate_admin_page_workday_writeback_for_motion_user(int)[pri:37, instance:com.admin.FunctionalAdminPage@821330f]" started-at="2024-06-05T22:10:45 IST" name="validate_admin_page_workday_writeback_for_motion_user" description="validate admin page workday writeback for motion user" data-provider="validate_admin_page_workday_writeback_for_motion_user" finished-at="2024-06-05T22:11:35 IST" duration-ms="50044" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[595739]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [motion2@email.com] but found [--]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [motion2@email.com] but found [--]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.admin.AdminPage.validate_upn_under_workday(AdminPage.java:2847)
+at com.admin.FunctionalAdminPage.validate_admin_page_workday_writeback_for_motion_user(FunctionalAdminPage.java:797)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_admin_page_workday_writeback_for_motion_user -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.admin.FunctionalAdminPage@821330f]" started-at="2024-06-05T22:11:35 IST" name="afterClass" finished-at="2024-06-05T22:11:35 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="close_web_driver()[pri:0, instance:com.admin.FunctionalAdminPage@821330f]" started-at="2024-06-05T22:11:35 IST" name="close_web_driver" finished-at="2024-06-05T22:11:36 IST" duration-ms="1184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_web_driver -->
+      </class> <!-- com.admin.FunctionalAdminPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
